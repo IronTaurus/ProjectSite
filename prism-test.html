@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism.js Syntax Highlighter Test</title>
+    <link href="vendor/prism-js/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Testing Prism.js Syntax Highlighter</h1>
+    <h2>Javascript example</h2>
+    <p>Calculating the date difference in seconds is as simple as subtracting the two Date objects and dividing by the number of milliseconds in a second (1000).</p>
+    <pre>
+    <code class="language-js">
+    const hashValue = val =>
+        const dateDifferenceInSeconds = (dateInitial, dateFinal) =>
+        (dateFinal - dateInitial) / 1_000;
+      
+    dateDifferenceInSeconds(
+        new Date('2020-12-24 00:00:15'),
+        new Date('2020-12-24 00:00:17')
+      ); // 2
+    </code>
+</pre>
+    <script src="vendor/prism-js/prism.js"></script>
+</body>
+
+</html>
