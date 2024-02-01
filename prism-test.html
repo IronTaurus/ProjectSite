@@ -14,6 +14,7 @@
     <p>Calculating the date difference in seconds is as simple as subtracting the two Date objects and dividing by the number of milliseconds in a second (1000).</p>
     <pre>
     <code class="language-js">
+    // https://www.30secondsofcode.org/
     const dateDifferenceInSeconds = (dateInitial, dateFinal) =>
         (dateFinal - dateInitial) / 1_000;
       
@@ -23,6 +24,29 @@
       ); // 2
     </code>
 </pre>
+
+<h2>C# example</h2>
+<p>C# offers intriguing applications in the realm of data manipulation, which often requires dealing with substantial amounts of raw data in diverse formats, such as text files and CSV files.
+
+    Fortunately, C# comes equipped with numerous built-in tools for handling various file formats. For instance, parsing a CSV file can be accomplished effortlessly:</p>
+<pre><code class="language-clike">
+// https://www.bytehide.com/blog/csharp-code-snippets-for-everyday-problems
+using System;
+using System.IO;
+
+// Read all lines from the CSV file
+string[] lines = File.ReadAllLines("/path/to/data.csv");
+
+// Process each line
+foreach (string line in lines)
+{
+    // Split the line into fields
+    string[] fields = line.Split(',');
+
+    // Do something with the fields, e.g., print them
+    Console.WriteLine($"{fields[0]} - {fields[1]} - {fields[2]}");
+}
+</code></pre>
     <script src="vendor/prism-js/prism.js"></script>
 </body>
 
