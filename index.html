@@ -6,8 +6,35 @@
     <title>Home</title>
 </head>
 <body>
-    <div>
-        Github test...
+    <h1>My Projects</h1>
+    <div id="projectsDiv" style="display: flex;">
+        <div>
+            JavaScript
+            <div class="projectList">
+                <ul>
+                    <li onclick="clickedItem(this.innerText)">Micro mouse</li>
+                    <li onclick="clickedItem(this.innerText)">Weather app</li>
+                    <li onclick="clickedItem(this.innerText)">Ai prompt creator</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            C# 
+            <div class="projectList">
+                <ul>
+                    <li>Dynamic graphic</li>
+                    <li>Grill Menu</li>
+                    <li>Schedule</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+<script>
+    function clickedItem(item){
+console.log(`${item} is clicked!`);
+    }
+</script>
 </body>
 </html>
