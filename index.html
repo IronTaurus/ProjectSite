@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-<body>
+<body id="body">
     <h1>My Projects</h1>
     <div id="projectsDiv" style="display: flex;">
         <div>
             JavaScript
             <div class="projectList">
-                <ul>
-                    <li onclick="clickedItem(this.innerText)">Micro mouse</li>
-                    <li onclick="clickedItem(this.innerText)">Weather app</li>
-                    <li onclick="clickedItem(this.innerText)">Ai prompt creator</li>
-                </ul>
+                <button onclick="clickedItem('micromouse')">Micro Mouse</button>
+                <button onclick="clickedItem('p2')">project2</button>
+                <button onclick="clickedItem('p3')">Project3</button>
             </div>
         </div>
 
         <div id="ProjectDisplay">
- 
+
         </div>
 
     </div>
-<script>
-    function clickedItem(item){
-console.log(`${item} is clicked!`);
-    }
-</script>
+    <script>
+        function clickedItem(item){
+            console.log(`${item}`)
+            var display = document.createElement("script");
+            display.setAttribute('type', 'text/javascript')
+            display.setAttribute('src', `${item}.js`);
+            var bodyElement = document.getElementById("body");
+            bodyElement.appendChild(display);
+        }
+    </script>
+    
+
 </body>
 </html>
