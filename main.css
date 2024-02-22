@@ -1,0 +1,18 @@
+#iCanvas{
+    height: 50px;
+    width: 50px;
+    color: black;
+}
+
+.projectList{
+    width: 50%;
+    display: block;
+    
+}
+#ProjectDisplay{
+    border-style: solid;
+    background-color: cornflowerblue;
+    border-width: 2px;
+    height: 600px;
+    width: 800px;
+}

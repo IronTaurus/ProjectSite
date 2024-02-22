@@ -1,13 +1,10 @@
 console.log("Micro Mouse!")
 const projectDisplay = document.getElementById("ProjectDisplay");
-var title = document.createElement("h1");
-var textNode = document.createTextNode("Micro mouse is displayed!");
-console.log("Starting Micro Mouse program...")
-title.appendChild(textNode);
-projectDisplay.appendChild(title);
-var canvas = document.createElement('canvas');
-let ctx = canvas.getContext('2d');
-projectDisplay.appendChild(canvas);
+let maze = document.querySelectorAll(".maze");
+let ctx = maze.getContext('2d');
+
+projectDisplay.appendChild(ctx);
+
 
 let current;
 
@@ -47,6 +44,11 @@ class Cell{
             leftWall: true
         }
     }
+        drawTopWall(x, y, size, columns, rows){
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo();
+        };
 }
 const myMaze = new Maze(500, 10, 10);
 myMaze.Setup();
