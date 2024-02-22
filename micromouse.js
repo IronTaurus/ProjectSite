@@ -5,6 +5,9 @@ var textNode = document.createTextNode("Micro mouse is displayed!");
 console.log("Starting Micro Mouse program...")
 title.appendChild(textNode);
 projectDisplay.appendChild(title);
+var canvas = document.createElement('canvas');
+let ctx = canvas.getContext('2d');
+projectDisplay.appendChild(canvas);
 
 let current;
 
@@ -45,45 +48,8 @@ class Cell{
         }
     }
 }
-
 const myMaze = new Maze(500, 10, 10);
 myMaze.Setup();
 
-// const maze = {
-//     size: 4,
-//     cols: 4,
-//     rows: 4,
-//     grid: [],
-//     stack: [],
-//     setup: function(){
-//         console.log("entering setup...")
-//             for (let r = 0; r < this.rows; r++) {
-//                 let row = [];
-//                 for (let c = 0; c < this.cols; c++) {
-//                     let cell = new cell(r, c, this.grid, this.size)
-//                     console.log(cell.rowNr);
-//                     console.log(cell.colNr);
-//                     row.push(cell);
-//                 }
-//                 this.grid.push(row)
-//             }
-//             current = this.grid[0][0]; //starts the maze at cell 0,0 (topleft)
-//         }
-// }
-
-// const cell = {
-//     rowNr: 0,
-//     colNr: 0,
-//     parentGrid: maze.grid,
-//     parentSize: maze.size,
-//     visited: false,
-//     walls: {
-//         topWall: true,
-//         rightWall: true,
-//         botWall: true,
-//         leftWall: true
-//     }
-
-// }
 
 
