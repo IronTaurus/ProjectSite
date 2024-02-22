@@ -7,12 +7,17 @@
 .projectList{
     width: 50%;
     display: block;
-    
+
 }
-#ProjectDisplay{
+/* #ProjectDisplay{
     border-style: solid;
     background-color: cornflowerblue;
     border-width: 2px;
     height: 600px;
     width: 800px;
-}
+} */
+/* .maze{
+    background-color: black;
+    height: 500px;
+    width: 500px;
+} */
