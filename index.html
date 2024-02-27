@@ -12,24 +12,21 @@
         <div>
             JavaScript
             <div class="projectList">
-                <button onclick="clickedItem('micromouse')">Micro Mouse</button>
+                <button onclick="clickedItem('labyrinthGen')">Micro Mouse</button>
                 <button onclick="clickedItem('p2')">project2</button>
                 <button onclick="clickedItem('p3')">Project3</button>
             </div>
         </div>
 
         <div id="ProjectDisplay">
-            <canvas class="maze">
-
-            </canvas>
         </div>
 
     </div>
     <script>
         function clickedItem(item){
-            console.log(`${item}`)
+            console.log(`The clicked item is:` + item)
             var display = document.createElement("script");
-            display.setAttribute('type', 'text/javascript')
+            display.setAttribute('type', 'text/javascript');
             display.setAttribute('src', `${item}.js`);
             var bodyElement = document.getElementById("body");
             bodyElement.appendChild(display);
